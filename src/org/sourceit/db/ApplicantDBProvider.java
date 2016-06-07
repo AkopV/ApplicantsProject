@@ -25,7 +25,7 @@ public enum ApplicantDBProvider {
     ApplicantDBProvider() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_applicant", "root", "admin");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_applicant", "root", "Cesare1986");
         } catch (ClassNotFoundException | SQLException e) {
             System.err.println("Class not found: com.mysql.jdbc.Driver " + e);
             throw new RuntimeException("Class not found: com.mysql.jdbc.Driver");
@@ -140,5 +140,4 @@ public enum ApplicantDBProvider {
             }
         }
     }
-
 }
