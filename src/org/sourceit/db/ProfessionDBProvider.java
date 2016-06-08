@@ -75,7 +75,7 @@ public enum  ProfessionDBProvider {
         try {
             if (profession.getId() == -1) {
                 System.out.println("new profession");
-                preparedStatement = connection.prepareStatement("INSERT INTO profession (profession_name" +
+                preparedStatement = connection.prepareStatement("INSERT INTO profession (profession_name)" +
                         " VALUES (?) ");
 
                 preparedStatement.setString(1, profession.getProfessionName());
@@ -83,7 +83,7 @@ public enum  ProfessionDBProvider {
 
             } else {
                 System.out.println("update profession");
-                preparedStatement = connection.prepareStatement("UPDATE profession SET profession_name=?," +
+                preparedStatement = connection.prepareStatement("UPDATE profession SET profession_name=? " +
                         " WHERE profession_id=?");
 
                 preparedStatement.setString(1, profession.getProfessionName());

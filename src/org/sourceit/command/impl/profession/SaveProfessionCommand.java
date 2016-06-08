@@ -28,6 +28,6 @@ public class SaveProfessionCommand implements ICommand {
             return "pages/error.jsp";
         }
 
-        return "controller?command=applicants";
+        return "controller?command=professions";
     }
 }

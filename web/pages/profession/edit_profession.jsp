@@ -21,7 +21,7 @@
                 </c:when>
                 <c:otherwise>
                     <span>Profession</span>
-                    <input type="text" name="profession_id"/><br/>
+                    <input type="text" name="profession_name"/><br/>
                     <%--<select>--%>
                     <%--<c:forEach items="${professions}" var="profession">--%>
                     <%--<option value="${profession.getProfessionName()}">${profession.getProfessionName()}</option>--%>
