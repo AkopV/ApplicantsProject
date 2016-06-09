@@ -2,7 +2,7 @@ package org.sourceit.util;
 
 import org.sourceit.command.ICommand;
 import org.sourceit.command.impl.applicant.*;
-//import org.sourceit.command.impl.applicantresult.*;
+import org.sourceit.command.impl.applicantResult.*;
 import org.sourceit.command.impl.profession.*;
 import org.sourceit.command.impl.specialitySubject.*;
 import org.sourceit.command.impl.subject.*;
@@ -45,13 +45,13 @@ public enum Chooser {
         commandMap.put("saveSpecSubject", new SaveSpecialitySubjectCommand());
         commandMap.put("deleteSpecSubject", new DeleteSpecialitySubjectCommand());
         commandMap.put("editSpecSubject", new EditSpecialitySubjectCommand());
-//
-//        // commands for applicant results
-//        commandMap.put("applicantResults", new ApplicantResultCommand());
-//        commandMap.put("addApplicantResult", new AddApplicantResultCommand());
-//        commandMap.put("saveApplicantResult", new SaveApplicantResultCommand());
-//        commandMap.put("deleteApplicantResult", new DeleteApplicantResultCommand());
-//        commandMap.put("editApplicantResult", new EditApplicantResultCommand());
+
+        // commands for applicant results
+        commandMap.put("applicantResults", new ApplicantResultCommand());
+        commandMap.put("addApplicantResult", new AddApplicantResultCommand());
+        commandMap.put("saveApplicantResult", new SaveApplicantResultCommand());
+        commandMap.put("deleteApplicantResult", new DeleteApplicantResultCommand());
+        commandMap.put("editApplicantResult", new EditApplicantResultCommand());
 
     }
 

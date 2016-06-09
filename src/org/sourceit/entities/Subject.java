@@ -8,6 +8,11 @@ public class Subject extends Entity {
         this.id = -1;
     }
 
+    public Subject(String subjectName) {
+        this();
+        this.subjectName = subjectName;
+    }
+
     public String getSubjectName() {
         return subjectName;
     }
